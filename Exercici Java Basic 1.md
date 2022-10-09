@@ -24,5 +24,5 @@ System.out.printf("%c%n%d%n", c, n);
 a
 97
 ```
-En aquest cas de la variable int ens dona el resultat de un número ja que en el codi ASCII el resultat obtingut de la 'a' és el número 97.<br />
+Ens dona aquest resultat ja que estem assignant a la variable n el valor de la variable c, en aquest cas el valor és 'a'. En el codi ASCII la lletra 'a' te com a valor el número 97 que és el número que esta assignant a la variable n. <br />
 Ara, declara una variable de tipus short, anomenada s, i assigna-li el valor de la variable c:<br />
