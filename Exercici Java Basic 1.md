@@ -1,5 +1,5 @@
-**Pregunta 1<br />
-Declara dues variables de tipus byte, b0 i b1, i assigna-lis respectivament els valors 122 i 14.<br />
+**Pregunta1**<br />
+**Declara dues variables de tipus byte, b0 i b1, i assigna-lis respectivament els valors 122 i 14.<br />
 Suma les dues variables, sense assignar el resultat a cap variable (jshell l'assignarà automàticament a un variable temporal, que comença per $):<br />**
 ```
 byte b0 = 122;
@@ -12,8 +12,8 @@ System.out.println(b0 + b1);
 **Quin resultat obtenim? Per què? De quin tipus de dada és la variable temporal creada pel notebook?**<br/>
 Obtenim la suma de les dos variables correctament, la dada que crea el notebook com a resultat és un tipus de número int. <br />
 
-**Pregunta 2 <br />
-Declara una variable de tipus char anomenada c, i assignali el valor 'a'. <br />
+**Pregunta 2** <br />
+**Declara una variable de tipus char anomenada c, i assignali el valor 'a'. <br />
 Declara una variable tipus int, anomenada n, i assignali el valor de la variable c. <br />
 Quin resultat obtens? Per què?**
 ```
@@ -89,3 +89,53 @@ System.out.printf("%1.2f + %d = %1.2f%n", v, v0, v1)
 La variable és tipus com flotant ja que hi ha una variable de la suma que és tipus float llavors ens dona el resultat amb coma flotant.<br />
 
 **Pregunta 8**<br />
+**Declareu dues variables de tipus char de la següent manera char c = 'a', c1 = 1;<br />
+L'objectiu d'aquest exercici és assignar el valor 'b' en una tercera variable de tipus char, però sense usar el literal 'b', sinó fent la suma de les variables c i c1, és a dir: char c2 = c + c1;**
+```
+char c = 'a';
+char c1 = 1;
+char c2 = c + c1;
+System.out.printf("%c%n", c2 );
+```
+```
+char c2 = c + c1;
+incompatible types: possible lossy conversion from int to char
+```
+**Què està passant? Com ho podem solucionar per tal d'aconseguir l'objectiu d'aquest exercici?**<br />
+El que pasa com es veu a l'error és que no pot fer una correcta conversió de la dada int a char. Per conseguir que aquesta suma surti correctament hem de fer un casting per tal de fer que aquesta dada que consider int sigui char.
+```
+char c = 'a';
+char c1 = 1;
+char c2 = (char)(c + c1);
+System.out.printf("%c%n", c2 );
+```
+```
+b
+```
+
+**Pregunta 9**<br />
+**Executa la següent expressió i assigna-la a una variable h:
+var h = 4 * 4f + (4.0 + 4); <br />
+Ara, assigna el valor guardat a la variable h, a una altra variable de tipus float:
+float f = h;**<br />
+```
+var h = 4 * 4f + (4.0 +4);
+float f = h;
+System.out.printf("%f%n", f)
+```
+```
+ float f = h;
+incompatible types: possible lossy conversion from double to float
+```
+**Què obtenim? Per què?**<br />
+Obtenim un problema de conversió de dades ja que el reslutat que obtenim és un tipus de dada double i no float.<br />
+**Ara escriu el canvi que cal fer en l'expressió incial (4*4f + (4.0 + 4)) per tal que l'assignació del valor d'h a f sigui reeixit.**<br />
+Cal fer un casting per tal de que ens doni el resultat de la operació:
+```
+var h = (4 * 4f + (4.0 +4));
+float f = (float)h;
+System.out.printf("%1.2f%n", f)
+```
+```
+24.00
+```
