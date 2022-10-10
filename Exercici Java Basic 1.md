@@ -139,3 +139,41 @@ System.out.printf("%1.2f%n", f)
 ```
 24.00
 ```
+**Pregunta 10**<br />
+**A partir de les següents variables i assignacions byte b0 = 4, b1 = -4, b2 = 12;. Executa el següent codi** 
+```
+boolean bol1 = b0 == b2 / 3;
+boolean bol2 = b0 + b1;
+boolean bol3 = b0 + b1 > b2;
+```
+
+**Explica els resultat obtinguts en cada cas:**<br />
+En el primer cas obtenim el resultat trues ja que estem dividint b2 que es 12 entre 3 que és igual a 4 que és el mateix número que b0.
+```
+byte b0 = 4, b1 = -4, b2 = 12;
+boolean bol1 = b0 == b2 / 3;
+System.out.printf("Resultat boolean 1 = %b%n", bol1)
+```
+```
+Resultat boolean 1 = true
+```
+En el sgeon cas obtenim un error ja que a la varibale bol2 estem fent una suma a dos tipus de dades booleanes sense cap signe de comparació per tant el resultat que surt en cas de que no fos un error és un número enter.
+
+```
+byte b0 = 4, b1 = -4, b2 = 12;
+boolean bol2 = b0 + b1;
+System.out.printf("Resultat boolean 2 = %b%n", bol2)
+```
+```
+boolean bol2 = b0 + b1;
+incompatible types: int cannot be converted to boolean
+```
+En el tercer i últim cas obtenim el resultat false ja que estem sumant b0 que i b1 que dona com a resultat 0 i a la variable bol3 estem fent un comparació b0 més gran que b2 que te com a valor 12 ens dona el resultat false.
+```
+byte b0 = 4, b1 = -4, b2 = 12;
+boolean bol3 = b0 + b1 > b2;
+System.out.printf("Resultat boolean 3 = %b%n", bol3)
+```
+```
+Resultat boolean 3 = false
+```
