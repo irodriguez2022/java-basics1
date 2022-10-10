@@ -10,7 +10,8 @@ System.out.println(b0 + b1);
 136
 ```
 **Quin resultat obtenim? Per què? De quin tipus de dada és la variable temporal creada pel notebook?**<br/>
-**TODO** <br />
+Obtenim la suma de les dos variables correctament, la dada que crea el notebook com a resultat és un tipus de número int. <br />
+
 **Pregunta 2 <br />
 Declara una variable de tipus char anomenada c, i assignali el valor 'a'. <br />
 Declara una variable tipus int, anomenada n, i assignali el valor de la variable c. <br />
@@ -33,6 +34,7 @@ System.out.printf("%c%n%d%n", c, s);
 ```
 **Per què ara el resultat obtingut és diferent que en el cas anterior?**<br />
 En aquest cas ens dona error ja que te incompatibilitat de la conversió de tipus char a short.<br />
+
 **Pregunta 3<br />
 Continuant amb les variables de tipus char i short declarades a l'exercici 2, ara executeu:**
 ```
@@ -44,7 +46,9 @@ System.out.printf("%c%n%d%n", c, s);
 a
 97
 ```
-**TODO**<br />
+**Com s'anomena això que estem fent amb la variable c? Quin resultat obtenim ara? Per què (què està passant)?**<br />
+El que estem fent és un casting, és a dir estem assegurant que el valor de aquesta variable sigui definida totalmant com a dada tipus short. El resultat que obtenim éS el resultat de la lleta en números per el sistem ASCII. <br />
+
 **Pregunta 4<br />
 Executa el següent codi en una cel·la del notebook:**
 ```
@@ -57,6 +61,7 @@ System.out.printf("%d%n%d%n", s0, s1);
 -30536
 ```
 **TODO**<br />
+
 **Pregunta 5 <br />
 Executa el següent codi amb el jshell:**<br />
 ```
@@ -82,4 +87,5 @@ System.out.printf("%1.2f + %d = %1.2f%n", v, v0, v1)
 ```
 **De quin tipus de dada és la variable v1? Per què (què està passant en fer-se la suma)?**<br />
 La variable és tipus com flotant ja que hi ha una variable de la suma que és tipus float llavors ens dona el resultat amb coma flotant.<br />
+
 **Pregunta 8**<br />
