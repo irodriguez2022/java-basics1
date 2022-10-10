@@ -60,7 +60,7 @@ System.out.printf("%d%n%d%n", s0, s1);
 32000
 -30536
 ```
-**TODO**<br />
+Dona aquest resultat ja que el rang que te el tipus short no pot incluir aquest número per tant el notebook amb els bytes que hi ha ho fica<br />
 
 **Pregunta 5 <br />
 Executa el següent codi amb el jshell:**<br />
